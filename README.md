@@ -14,3 +14,10 @@ Method 2.
 Using pods
 
 pod 'SLNPopupMenu'
+
+
+[PopupView showPopWithDescriptionImage:menuArray font:nil touchPoint:[recognizer locationInView:self.view] success:^(NSInteger selectedIndex) {
+        NSLog(@"Selected Index %li", (long)selectedIndex);
+    } dismiss:^{
+        NSLog(@"Disissed");
+    }];

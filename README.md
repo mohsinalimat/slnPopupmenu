@@ -65,15 +65,19 @@ How to use
  3.  Menu with Title and Image
 ![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/3.png)
 
-     NSArray *menu = @[
+ 
+
+    NSArray *menu = @[
         @["Title 1", [UIImage ImageWithName:@"img1.png"]],
         @["Title 2", [UIImage ImageWithName:@"img2.png"]],
         @["Title 3", [UIImage ImageWithName:@"img3.png"]],
         @["Title 4", [UIImage ImageWithName:@"img4.png"]]
         ]
 
-    [PopupView showPopOnlyWithTitleAndImage:menuArrayImage font:nil touchPoint:[recognizer locationInView:self.view] success:^(NSInteger selectedIndex) {
-                NSLog(@"Selected Index %li", (long)selectedIndex);
-            } dismiss:^{
-                NSLog(@"Disissed");
-            }];
+   
+
+     [PopupView showPopOnlyWithTitleAndImage:menuArrayImage font:nil touchPoint:[recognizer locationInView:self.view] success:^(NSInteger selectedIndex) {
+                    NSLog(@"Selected Index %li", (long)selectedIndex);
+                } dismiss:^{
+                    NSLog(@"Disissed");
+                }];

@@ -19,8 +19,7 @@ Method 2:  Using pod
 How to use
 
  1. Menu with Title, Description and Menu Icon
-
-![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/1.png)
+![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/rsz_1.png)
 
 
     NSArray *menu = @[
@@ -44,7 +43,7 @@ How to use
  
  2. Menu with Title and Description
 
-![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/2.png)
+![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/rsz_2.png)
 
     NSArray *menu = @[
         @["Title 1", "Description"],
@@ -63,7 +62,8 @@ How to use
 
 
  3.  Menu with Title and Image
-![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/3.png)
+
+![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/rsz_3.png)
 
  
 

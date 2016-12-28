@@ -19,23 +19,26 @@ Method 2:  Using pod
 How to use
 
  1. Menu with Title, Description and Menu Icon
+ 
 ![enter image description here](https://raw.githubusercontent.com/puvanarajan/slnPopupmenu/master/rsz_1.png)
 
 
-    NSArray *menu = @[
-    @["Title 1", "Description", [UIImage ImageWithName:@"img1.png"]],
-    @["Title 2", "Description", [UIImage ImageWithName:@"img2.png"]],
-    @["Title 3", "Description", [UIImage ImageWithName:@"img3.png"]],
-    @["Title 4", "Description", [UIImage ImageWithName:@"img4.png"]]
-    ]
+  
 
-   
-
-    [PopupView showPopWithDescriptionImage:menu font:nil touchPoint:[recognizer locationInView:self.view] success:^(NSInteger selectedIndex) {
-                NSLog(@"Selected Index %li", (long)selectedIndex);
-            } dismiss:^{
-                NSLog(@"Disissed");
-            }];
+      NSArray *menu = @[
+        @["Title 1", "Description", [UIImage ImageWithName:@"img1.png"]],
+        @["Title 2", "Description", [UIImage ImageWithName:@"img2.png"]],
+        @["Title 3", "Description", [UIImage ImageWithName:@"img3.png"]],
+        @["Title 4", "Description", [UIImage ImageWithName:@"img4.png"]]
+        ]
+    
+       
+    
+        [PopupView showPopWithDescriptionImage:menu font:nil touchPoint:[recognizer locationInView:self.view] success:^(NSInteger selectedIndex) {
+                    NSLog(@"Selected Index %li", (long)selectedIndex);
+                } dismiss:^{
+                    NSLog(@"Disissed");
+                }];
 
  
 
